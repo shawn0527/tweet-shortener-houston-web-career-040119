@@ -13,17 +13,17 @@ def dictionary
   }
 end
 
-def word_substituter(tweets)
+def word_substituter(tweet)
   dictionary
-  tweets_array = tweets.split(" ")
-  tweets_array.collect do |word|
+  tweet_array = tweet.split(" ")
+  tweet_array.collect do |word|
     dictionary.collect do |key, value|
       if key == word
         word.replace(value)
       end
     end
   end
-  tweets_array.join(" ")
+  tweet_array.join(" ")
 end
 
 def bulk_tweet_shortener(tweets)
