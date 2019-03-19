@@ -29,7 +29,7 @@ end
 def bulk_tweet_shortener(tweets)
   dictionary
   tweets.collect do |tweet|
-    puts word_substituter(tweet)
+    word_substituter(tweet)
   end
   puts tweets
 end# Write your code here.
