@@ -18,7 +18,7 @@ def word_substituter(tweet)
   tweet_array = tweet.downcase.split(" ")
   tweet_array.each do |word|
     test_word = word.delete(",?!.")
-    dictonary.each do |key, value|
+    dictionary.each do |key, value|
       if key == test_word
         new_word = test_word.relace(value)
       end
