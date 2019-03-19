@@ -25,7 +25,6 @@ def word_substituter(tweet)
     end
   end
   words.join(" ")
-end 
 
   #outputs new array
   #transmit new array to new string
