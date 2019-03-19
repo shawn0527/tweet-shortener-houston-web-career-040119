@@ -15,7 +15,7 @@ end
 
 def word_substituter(tweet)
   dictionary
-  tweet_array = tweet.downcase.split(" ")
+  tweet_array = tweet.split(" ")
   tweet_array.collect do |word|
     test_word = word.delete(",?!.")
     dictionary.collect do |key, value|
