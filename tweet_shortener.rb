@@ -22,7 +22,6 @@ def word_substituter(tweet)
       if key == test_word
         word.replace(value)
       end
-      return tweet_array
     end
   end
 
