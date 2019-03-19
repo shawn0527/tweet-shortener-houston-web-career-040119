@@ -24,7 +24,7 @@ def word_substituter(tweet)
       end
     end
   end
-    
+
   #outputs new array
   #transmit new array to new string
   #outputs new string
