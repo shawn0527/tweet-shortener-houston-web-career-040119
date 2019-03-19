@@ -14,17 +14,17 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  dict = dictionary
-  words = tweet.split(" ")
-
-  words.collect do |word|
+  dictionary
+  tweet_array = tweet.downcase.split(" ")
+  tweet_array.collect do |word|
+    test_word = word.delete(",?!.")
     dictionary.collect do |key, value|
-      if word == key
-        word.replace(value)
+      if key == test_word
+        word = value
       end
+      return tweet_array
     end
   end
-  words.join(" ")
 
   #outputs new array
   #transmit new array to new string
