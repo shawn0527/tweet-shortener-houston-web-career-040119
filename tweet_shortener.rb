@@ -20,8 +20,9 @@ def word_substituter(tweet)
     test_word = word.delete(",?!.")
     dictionary.each do |key, value|
       if key == test_word
-        word = value
+        new_word = value
       end
+      test_word.replace(new_word)
       return tweet_array
     end
   end
