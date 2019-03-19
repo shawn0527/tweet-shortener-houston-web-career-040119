@@ -20,7 +20,7 @@ def word_substituter(tweet)
     test_word = word.delete(",?!.")
     dictionary.collect do |key, value|
       if key == test_word
-        word = value
+        word.replace(value)
       end
       return tweet_array
     end
